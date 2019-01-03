@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "tabBar": {
+    "color": "#fff",
+    "backgroundColor":"#171516",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tabbar_home.png",
+        "selectedIconPath": "images/tabbar_home.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "分类",
+        "iconPath": "images/tabbar_list.png",
+        "selectedIconPath": "images/tabbar_list.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "购物车",
+        "iconPath": "images/tabbar_goods.png",
+        "selectedIconPath": "images/tabbar_goods.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "我的",
+        "iconPath": "images/tabbar_profile.png",
+        "selectedIconPath": "images/tabbar_profile.png"
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "文化创意馆",
+    "navigationBarTextStyle":"black"
+  }
+}
