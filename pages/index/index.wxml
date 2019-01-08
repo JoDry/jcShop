@@ -16,4 +16,12 @@
       </view>
     </block>
   </wxc-flex>
+  <wxc-flex class="short" cross="top" wrap="wrap">
+    <block wx:key="{{item}}" wx:for="{{shorts}}">
+      <view class="short-item">
+        <image class="short-img" src='../../images/nav_icon.png'></image>
+        <text>{{item.title}}</text>
+      </view>
+    </block>
+  </wxc-flex>
 </view>

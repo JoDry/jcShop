@@ -21,7 +21,7 @@ Page({
 
     this.getBannerImgs();
     this.getNav();
-
+    this.getShorts();
     
     // if (app.globalData.userInfo) {
     //   this.setData({
@@ -60,7 +60,7 @@ Page({
   },
   getBannerImgs: function() {
     wx.request({
-      url: 'http://jincipay.sjtravel.cn/api/ajax.ashx?action=banner_get',
+      url: common.host + 'api/ajax.ashx?action=banner_get',
       dataType: 'json',
       success: res => {
         if (res.data.success) {
@@ -79,15 +79,28 @@ Page({
     })
   },
   getNav: function() {
-    // http://jincipay.sjtravel.cn/api/ajax.ashx?action=type_get
     wx.request({
-      url: 'http://jincipay.sjtravel.cn/api/ajax.ashx?action=type_get',
+      url: common.host + 'api/ajax.ashx?action=type_get',
       dataType: 'json',
       success: res => {
         // console.log(res.data.res.length);
         if(res.data.success){
           this.setData({
             navs: res.data.res
+          })
+        }
+      }
+    })
+  },
+  getShorts: function() {
+    wx.request({
+      url: common.host + 'api/ajax.ashx?action=get_pro_list&page=1&num=30',
+      dataType: 'json',
+      success: res => {
+        console.log(res);
+        if (res.data.success) {
+          this.setData({
+            shorts: res.data.res
           })
         }
       }
