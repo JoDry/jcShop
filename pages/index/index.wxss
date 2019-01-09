@@ -74,5 +74,6 @@
 
 .short-title {
   flex: 1;
+  font-size: 20rpx;
 }
 
