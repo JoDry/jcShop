@@ -72,4 +72,7 @@
   width: 100%;
 }
 
+.short-title {
+  flex: 1;
+}
 
