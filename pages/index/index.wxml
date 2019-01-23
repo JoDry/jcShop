@@ -19,13 +19,13 @@
   <wxc-flex class="short" cross="top" wrap="wrap">
     <block wx:key="{{item}}" wx:for="{{shorts}}">
       <view class="short-item">
-        <image class='short-img' src='../../images/nav_icon.png'></image>
+        <image class='short-img' src='http://jincipay.sjtravel.cn{{item.url}}'></image>
         <view class='short-box'>
-          <view>
+          <view class='short-titles'>
             <text class='short-title'>{{item.title}}</text>
-            <text>{{item.price}}</text>
+            <text class='short-price'>￥{{item.price}}</text>
           </view>
-          <image class='icon-goods'></image>
+          <image class='icon-goods' src='../../images/icon_goods.png'></image>
         </view>
       </view>
     </block>
